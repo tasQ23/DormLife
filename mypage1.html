@@ -1,0 +1,121 @@
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css"/>
+  <title>Decoration</title>
+  <!-- the photo slideshow is from http://www.ed-moore.net/new/classes.php?UnitCode=ISYS100&ResourceCode=6 , I tried to implement the same logic for caption and it worked.-->
+  
+  <script type="text/javascript">
+	var images	= new Array();
+	images[0] 	= "grunge.jpg";
+	images[1] 	= "Boho.jpg";
+	images[2] 	= "vintage.jpg";
+	images[3] 	= "preppy.jpg";
+	var current = 0;
+	var captions=new Array();
+	captions[0]="Grunge";
+	captions[1]="Bohemian";
+	captions[2]="Vintage";
+	captions[3]="Preppy";
+
+	function changeImage(inc) {
+		current = Math.abs(current+inc)%images.length;
+		document.getElementById("target").src = images[current];
+	}
+	function changeCaptions(inc) {
+		document.getElementById("pictext").innerHTML = captions[current];
+	}
+	
+</script>
+<link rel="icon" href="6-color-beach-ball-152-132877.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+ <div id="mypageheading" style="background-color:#ABD5E0;"><b>Decorations and DIY</b></div>
+ 
+ <div id="navbar">
+			  <ul>
+			     
+                 <li><p><a href="index.html">Home</a></p></li>
+				 <li style="background-color:#F26394;"><p><a href="mypage1.html">Decoration</a></p></li>
+				 <li><p><a href="mypage2.html">Food</a></p></li>
+              </ul>
+			  </div>
+	<h2> <div id="heading2" style="background-color:#9ED0DE;margin-top:150px"> Your room defines <b>YOU<b> </div></h2>
+    <div id="para" style="background-color:#F5EDFC">
+	<p>  Your room, and how you make it look like will speak a lot about you. <br> It will reflect your personality and your style.<br>Here are some of the types of look you can implement to give out the same aura as yours.
+       </p>
+	   
+	   <h3 id="pictext">Simple</h3>
+     <a href="#target" onClick="changeImage(-1);changeCaptions(-1);" style="text-decoration:none;">Previous Image</a>
+	 <img src="https://s-media-cache-ak0.pinimg.com/736x/96/64/66/966466b40ab4861b2494e9c3f982f2ea.jpg" id="target" style="height:500;width:500;" />
+	<a href="#target" onClick="changeImage(1);changeCaptions(1);"style="text-decoration:none">Next Image</a>
+	  
+    <h2> <div id="heading2" style="background-color:#9ED0DE;">Things that make up your room </div></h2>
+	<p> Now that we have seen the looks, let us focus on the details. <br> A typical dorm room will consist of a bed,closet,desk and a chair.<br>
+	 What more things you add depends on your needs and of course,budget.<br>
+	 <ul>
+	 <!-- Images below are taken from Pinterest-->
+	 <li><h3>The Wall</h3></li><br>
+	 <i>Pictures</i> not only remind you of your moments, experiences and give a sense of your closed ones' presence, it also add beauty in your room.
+	<table  style="border-collapse:collapse">
+	  <tr>
+	    <td><img src="https://s-media-cache-ak0.pinimg.com/736x/45/ed/b6/45edb61bf45ea500525243211f2b3429.jpg" style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/48/ff/0e/48ff0eff145a2624a5107ea4262114c2.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/7e/d3/ed/7ed3ed956262df9e5ff414a3112c6641.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/73/ce/8c/73ce8cb54d603aec588dda8103e5e7ff.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		</tr>
+		</table><br>
+		<i>Lights</i> add brightness in your room and also create magic !
+		<table  style="border-collapse:collapse">
+	  <tr>
+	    <td><img src="https://s-media-cache-ak0.pinimg.com/736x/2f/b6/c0/2fb6c0e8b22d4e220bed3de0b6154877.jpg" style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/35/5e/ca/355ecae72b2866a72dbb2d4a9a476cd0.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/29/af/04/29af049560d0b451103db9a2ab1497d9.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/0a/bb/81/0abb81ed9d0a5c0ed07b4e02124b056f.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		</tr>
+		</table>
+		<i>Ideas</i>, put up anything you want that makes you feel good.
+		<table  style="border-collapse:collapse">
+	    <tr>
+	    <td><img src="https://s-media-cache-ak0.pinimg.com/736x/e8/f1/1d/e8f11d511b0b2bed99938838141803f1.jpg" style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/28/36/bf/2836bfaf3ac0ed802fdcd93a81da2c6d.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/5a/e7/c7/5ae7c7aef26559f964bc40f55022b337.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/a3/13/09/a31309ad76d1f40e51f58f6a87d20c55.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		</tr>
+		</table><br>
+	<li><h3>Other DIY decorations that you can put anywhere you like. Not only are these cost-efficient but you are also re-using stuffs! Go Green!</h3></li>
+	  	<table  style="border-collapse:collapse">
+	    <tr>
+	    <td><img src="https://s-media-cache-ak0.pinimg.com/736x/25/f0/7a/25f07af789e300d2716548fe750d40aa.jpg" style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="http://ak-hdl.buzzfed.com/static/2015-08/12/7/enhanced/webdr13/enhanced-11310-1439379298-11.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="http://ak-hdl.buzzfed.com/static/2015-08/6/6/enhanced/webdr03/enhanced-19285-1438855662-1.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="http://ak-hdl.buzzfed.com/static/2015-08/12/16/enhanced/webdr03/enhanced-7661-1439412858-1.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/fb/f7/8d/fbf78dace46b180c94a5a48c67a1ba33.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		</tr>
+		</table><br> 
+	<h2> <div id="heading2" style="background-color:#9ED0DE;">Organizing the room </div></h2>
+	<!-- text taken from http://stress.about.com/od/managetimeorganize/a/homerelaxation.htm -->
+     	<p>
+		Just sitting in a messy room can create stress. Whether you conceptualize this in Feng Shui terms as <br><q>stagnant chi</q>, in cerebral terms as too much information for the eye to process, or in practical <br>terms as a visual reminder of how much work you have to do to get your house clean, you <br>probably already know that mess means stress. Living in a cluttered home can create constant <br>low-grade stress and subtly but steadily drain your energy.
+<br>Being in a space characterized by order, tranquillity, and a physical manifestation of your <br>tastes, on the other hand, can soothe you and help release stress. 
+<br>Coming home to an orderly home can help you feel like you are entering a sanctuary <br>away from the stresses of the outside world.
+ So here are some storage and organization ideas to help you.
+       </p>
+    	<table  style="border-collapse:collapse">
+	    <tr>
+	    <td><img src="https://s-media-cache-ak0.pinimg.com/736x/11/83/61/11836135ea56dd9b507c8ef6afea3a9c.jpg" style="width:200px;height:200px;padding:10px;"/></td>
+		<!-- Images below taken from http://www.gurl.com/2014/08/19/dorm-room-tips-tricks-hacks-organization-decorating-ideas/-->
+		<td><img src="http://cdn3.gurl.com/wp-content/uploads/2014/08/dormroomtips25.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="http://cdn3.gurl.com/wp-content/uploads/2014/08/dormroomtips5.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<td><img src="http://cdn.gurl.com/wp-content/uploads/2014/08/dormroomtips12.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		<!--Image taken from Pinterest-->
+		<td><img src="https://s-media-cache-ak0.pinimg.com/736x/93/c9/b2/93c9b26c168124b68e6adeeb4cc43ce2.jpg"style="width:200px;height:200px;padding:10px;"/></td>
+		</tr>
+		</table><br> 
+  <h4> Crave for more? </h4>
+  <!-- SnapWidget -->
+<iframe src="http://snapwidget.com/sl/?h=c3RvcmFnZWlkZWFzfGlufDUwMHwzfDN8fHllc3wyMHxub25lfG9uU3RhcnR8eWVzfG5v&ve=300815" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:530px; height:530px"></iframe>
+ 
+ </div>
+</body>
+</html>  

@@ -1,0 +1,89 @@
+ /*Index*/
+ 
+ body {
+ background-color:white;
+ }
+ 
+ span{
+ color:blue;
+ }
+ 
+ #heading{
+background-color:#85D6FF;
+border:none;
+border-radius:5px 5px;
+margin: -35px 50px -39px 50px;
+padding-bottom:36px;
+font-family:Cursive;
+ font-size:70px;
+ text-align:center;
+}
+ #navbar ul{
+ 
+ margin-top:0px;
+ font-family:Cursive;
+ }
+#navbar li{
+    display: inline-block;
+    height:100px;
+	width:100px;
+	border-radius:100%;
+	border:none;
+    background-color:#FFC2FF;
+	text-align:center;
+	
+
+ }
+ #navbar li p{
+ 
+ margin-top:40px;
+ 
+ }
+ #navbar li a {
+ text-decoration:none;
+ color:black;
+}
+ #navbar li a #selected {
+ text-decoration:none;
+  color:black;
+}
+
+
+#heading2{
+background-color:#ADEFFF;
+border:none;
+border-radius:5px 5px;
+font-size:30px;
+margin: 20px 50px 0px 50px;
+}
+#para{
+background-color:#E6FAFF;
+border:none;
+border-radius:5px 5px;
+padding:10px;
+margin:50px;
+font-size:20px;
+}
+ 
+	
+ /*mypage1*/
+ 
+ #mypageheading{
+ background-color:#85D6FF;
+border:none;
+border-radius:5px 5px;
+margin: 96px 50px -220px 50px;
+padding-bottom:36px;
+font-family:Cursive;
+ font-size:70px;
+ text-align:center;
+
+ }
+ #withspace{
+ word-spacing:250px;
+ }
+ 
+ 
+ 
+ 
+ 
